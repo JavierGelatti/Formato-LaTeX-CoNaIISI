@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper,draft,oneside,notitlepage]{article}
+\usepackage[utf8]{inputenc} % Acentos, etc
+\usepackage[spanish]{babel} % Idioma
+
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry} % Margenes
+\usepackage{mathptmx} % Times New Roman
+
+\usepackage{multicol} % Dos columnas
+\setlength\columnsep{1cm}
+
+\usepackage{titlesec} % Formato de titulos de secciones
+\titleformat{\section}{\bfseries\large}{\thesection.}{0.3em}{}
+
+\pagestyle{empty} % Sin número de página
+
+\makeatletter
+% Metadatos
+\def\email#1{\gdef\@email{#1}}
+\def\@email{\@latex@warning@no@line{No \noexpand\email given}}
+
+\def\universidad#1{\gdef\@universidad{#1}}
+\def\@universidad{\@latex@warning@no@line{No \noexpand\universidad given}}
+
+% Título
+\newcommand{\titulo} {
+	\begin{center}
+		{\Large\bfseries\@title}
+		
+		\vspace{2em}
+		{\large
+			\@author
+
+			\itshape
+			\@universidad
+
+			\@email
+		}
+		\vspace{2em}
+	\end{center}
+}
+\makeatother
+
+% Minisección (para las palabras clave, agradecimientos, etc)
+\newcommand{\miniseccion}[1] {
+	\vspace{1em}
+	\noindent\textbf{#1}
+
+	\noindent\ignorespaces
+}
+
+% Abstract
+\newcommand{\resumen}[1] {
+	\begin{center}
+	\bfseries\large Abstract
+	\end{center}
+	\noindent\textit{#1}
+}
+
+% Bibliografia
+\newcommand{\bibliografia}[1] {
+	\begingroup
+	\renewcommand{\section}[2]{}%
+	\begin{thebibliography}{9}
+	#1
+	\end{thebibliography}
+	\endgroup
+}

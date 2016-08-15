@@ -1,0 +1,98 @@
+\input{formato.tex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\author{Facundo Javier Gelatti}
+\title{Formato para la presentación de documentos (en \LaTeX)}
+\email{javiergelatti@gmail.com}
+\universidad{UTN – Fac. Regional Tucumán}
+
+\begin{document}
+\titulo
+
+\begin{multicols}{2}
+\resumen{``El abstract debería ser considerado como una
+miniversión del artículo'' (Day 1991). Describe los
+objetivos del estudio, la metodología usada, los
+resultados principales del trabajo y sus conclusiones
+fundamentales. Un abstract tiene típicamente un único
+párrafo y menos de 250 palabras y debe ``permitir a
+los lectores identificar el contenido básico del
+documento rápida y fielmente, con el fin de determinar
+la relevancia del mismo para sus intereses y, por tanto,
+para decidir si necesitan leer el documento en su
+totalidad'' (definición del American National
+Standards Institute). Será escrito en fuente (Times New
+Roman, 10, cursiva).}
+
+\miniseccion{Palabras Clave (Times New Roman, 10, negrita)}
+Las palabras Claves propuestas por el Autor, para la
+indexación del documento. Serán escritas en fuente
+(Times New Roman, 10).
+
+\section{Introducción}
+La introducción sirve para que los lectores
+entiendan el contexto en el que se ha originado el
+trabajo y deja claro cuál es el tema básico. Contiene
+una descripción clara y precisa del problema que se ha
+abordado, explica su relevancia, cita y resume
+brevemente los trabajos que definen el problema y
+describen soluciones anteriores, para contextualizar la
+que se propone. Será escrita en fuente.
+
+\section{Elementos del Trabajo y Metodología}
+Es la parte sustancial del trabajo, el lector debe
+comprender el método usado con tal detalle que le
+permita aplicarlo al mismo o a otro problema. Se
+desarrollan los conceptos explicando la metodología
+utilizada. Será escrito en fuente.
+
+\section{Resultados}
+Los resultados son los que avalarán las conclusiones
+y justificarán la utilidad el trabajo realizado.
+
+\section{Discusión}
+Explica las relaciones, las tendencias, las posibles
+generalizaciones de los resultados observados, sin dejar
+de discutir aquellos resultados inesperados que
+invaliden total o parcialmente alguna de las hipótesis
+iniciales del trabajo. Debe poner los resultados en
+relación con los de otros trabajos e indicar las posibles
+aplicaciones (o implicaciones teóricas) de los
+resultados de la presente investigación.
+
+\section{Conclusión}
+La conclusión debería ser la versión condensada de
+las secciones anteriores, presentando los resultados
+claves encontrados en el trabajo. Debería estar
+estrechamente relacionada con los objetivos que fueron
+presentados en la introducción. Muchas veces es, junto
+con el título, la parte mas leída y por lo tanto debe ser
+de comprensión fácil y exacta.
+
+\section{Referencias}
+Documentación y bibliografía utilizada. Todas las
+publicaciones citadas deberán incluirse en la lista de
+referencias. La numeración será secuencial y estará
+entre corchetes: [1]. Deberá respetarse el formato de
+bibliografía que se detalla a continuación:
+
+\bibliografia{
+	\bibitem{asd1}
+	A.B. Smith, C.D. Jones, and E.F. Roberts, \emph{``Article Title''}, 
+	Journal, Publisher, Location, Date, pp. 1-10.
+
+	\bibitem{asd2}
+	Jones, C.D., A.B. Smith, and E.F. Roberts, \emph{Book Title},
+	Publisher, Location, Date.
+}
+
+\miniseccion{Agradecimientos}
+Si existiera, mencionarlos en forma concisa.
+
+\miniseccion{Datos de Contacto}
+Nombre y Apellido. Institución. Dirección postal. Email.
+
+\end{multicols}
+\end{document}
