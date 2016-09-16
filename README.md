@@ -1,2 +1,2 @@
-# Formato-LaTeX-CNEISI
-Archivos LaTeX basados en el formato para el envío de papers al 10mo. Congreso Nacional de Estudiantes de Ingeniería en Sistemas de Información (CNEISI 2016)
+# Formato-LaTeX-CoNaIISI
+Archivos LaTeX basados en el formato para el envío de papers al 4to. Congreso Nacional de Ingeniería en Informática / Sistemas de Información (CoNaIISI 2016)
